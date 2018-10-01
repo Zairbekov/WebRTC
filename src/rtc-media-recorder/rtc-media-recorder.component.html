@@ -1,0 +1,18 @@
+ <select>
+        <option *ngFor="let vacancy of vacancies; index as i" value={{vacancy.id}}>{{vacancy.title}}</option>
+      </select>
+<h1 style="color: #263f6a;">{{list[count]}}</h1>
+<h1 style="color: #263f6a;">{{"0"+minutesDisplay}} :
+  {{str+secondsDisplay}}<br/>
+</h1>
+<div class="rec-player">
+  <video [ngClass]="{'hide-video-player': !showVideoPlayer}" onloadstart="this.volume=0" class="video-rec" #recVideo autoplay muted controls></video>
+  <div class="rec-actions">
+    <div *ngIf="hideStopBtn">
+      <button *ngIf="butn" (click)="start()"> Start Interview </button>
+      <button *ngIf="recordedBlobs" (click)="download()"> Finish </button>
+    </div>
+    <button *ngIf="!hideStopBtn" (click)="next()"> Next </button>
+    <button (click)="downloadVideo()"> download </button>
+  </div>
+</div>

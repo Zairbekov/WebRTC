@@ -1,0 +1,25 @@
+.video-rec {
+  width: 50%;
+  background-color: #263f6a;
+}
+.rec-actions button {
+  text-transform: capitalize;
+}
+.hide-video-player {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+button {
+  cursor: pointer;
+  background-color: #263f6a;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 75px;
+  height: 30px;
+}
+button:hover {
+  background-color: black;
+
+}

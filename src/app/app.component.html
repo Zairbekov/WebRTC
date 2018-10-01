@@ -1,0 +1,11 @@
+<div class="webrtc-demo-app">
+  <img src="https://chicityconsulting.com/wp-content/uploads/2017/03/logo-transparent-chicity.png"
+       style="width: 700px; height: 120px">
+  <hr>
+
+  <div>
+    <ng-rtc-media-recorder [constrains]="constrains"
+                           (startRecording)="announceStart()" (fetchRecording)="handleVideoStream($event)">
+    </ng-rtc-media-recorder>
+    </div>
+</div>
